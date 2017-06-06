@@ -1,5 +1,7 @@
 import tensofrlow as tf
 import numpy as np
+from distutils.version import LooseVersion
+import warnings
 
 assert LooseVersion(tf.__version__) in [LooseVersion('1.0.0'), LooseVersion('1.0.1')], 'This project requires TensorFlow version 1.0  You are using {}'.format(tf.__version__)
 print('TensorFlow Version: {}'.format(tf.__version__))
