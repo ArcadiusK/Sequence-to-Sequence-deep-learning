@@ -113,7 +113,7 @@ def seq2seq_model(input_data, target_data, keep_prob, batch_size, sequence_lengt
    
     enc_state = encoding_layer(enc_embed_input, rnn_size, num_layers, keep_prob)
     dec_input = process_decoding_input(target_data, target_vocab_to_int, batch_size)
-    dec_embeddings = tf.Variable(tf.truncated_normal([target_vocab_size, dec_embedding_size], stddev=0.01))
+    dec_embeddings = tf.Variable(tf.truncated_normal([target_vocab_size, dec_embedding_size], stddev=0.1))
     dec_embed_input = tf.nn.embedding_lookup(dec_embeddings, dec_input)
     logits_train, logits_infer = decoding_layer(dec_embed_input, dec_embeddings, 
                                                 enc_state, target_vocab_size, 
