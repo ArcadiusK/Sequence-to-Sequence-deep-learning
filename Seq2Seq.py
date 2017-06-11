@@ -8,7 +8,7 @@ print('TensorFlow Version: {}'.format(tf.__version__))
 
 # Check for a GPU
 if not tf.test.gpu_device_name():
-    warnings.warn('No GPU found. Please use a GPU to train your neural network.')
+    warnings.warn('No GPU found. Please use a GPU to train this neural network.')
 else:
     print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
 
