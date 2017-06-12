@@ -14,7 +14,7 @@ else:
 
 
 def model_inputs():
-    input_ = tf.placeholder(tf.int32, [None, None], 'input')
+    inputs_ = tf.placeholder(tf.int32, [None, None], 'input')
     target_ = tf.placeholder(tf.int32, [None, None], 'target')
     learning_rate_ = tf.placeholder(tf.float32, None, 'lr')
     keep_prob_ = tf.placeholder(tf.float32, None, 'keep_prob')
