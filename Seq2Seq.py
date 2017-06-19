@@ -123,4 +123,27 @@ def seq2seq_model(input_data, target_data, keep_prob, batch_size, sequence_lengt
     return logits_train, logits_infer
 
     
+# HYPER PARAMETER TUNING
+#Number of Epochs
+epochs = 3
+ 
+#Batch Size
+batch_size = 128
+ 
+#RNN Size
+rnn_size = 256 
+ 
+#Number of Layers
+num_layers = 2
+ 
+#Embedding Size
+encoding_embedding_size = 256 
+decoding_embedding_size = 256 
+ 
+#Learning Rate
+learning_rate = 0.001
+ 
+#Dropout Keep Probability
+keep_probability = 0.5
+
 
